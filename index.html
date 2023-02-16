@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>The Book Show</title>
+    <style>
+        section {
+            padding: 60px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md ">
+        <div class="container-xl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    <i class="bi bi-book"></i>
+                    Front End developer - The Book
+                </span>
+            </a>
+            <!-- Toggle Button for mobiles -->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar-links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+
+                <ul class="navbar-nav text-dark  mt-3">
+                    <li class="nav-item">
+                        <a href="#topics" class="nav-link">About The Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Get In Touch</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="#pricing" class="btn btn-primary border-dark border-1">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main image & intro text -->
+    <section id="intro">
+        <div class="container-lg ">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="dispaly-2">Start / Improve</div>
+                        <div class="display-5 text-muted">Your Coding Skills</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Take your First Step Toward Your Dream with Our Book.</p>
+                    <p class="lead">From Scratch to Master in Front End Devlopement</p>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+                    <!-- open sidebar /off canvas -->
+                    <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button"
+                        aria-controls="sidebar">
+                        Explore my other Books
+                    </a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-- Tool Tip -->
+                    <span class="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Book Cover">
+                        <img class="img-fluid" src="./assets/book-cover.png" alt="Book Cover">
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Topics at a glance -->
+    <section id="topics" class="bg-lightblue" >
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Inside the Book...</h2>
+                <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+            </div>
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-4">
+                    <img src="assets/ebook.png" alt="Kindle ebook" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- accordian -->
+                    <div class="accordion" id="chapters">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-1">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1 ">
+                                    Skeleton - HTML
+                                </button>
+                            </h2>
+                            <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                                data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>HTML - Hyper Text Markup Language.</p>
+                                    <p>HTML is the standard Markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-2">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                                    Skin / Muscles - CSS
+                                </button>
+                            </h2>
+                            <div id="chapter-2" class="accordion-collapse collapse " aria-labelledby="heading-2"
+                                data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>CSS - Cascading Style Sheets</p>
+                                    <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-3">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+                                    Brain - Javascript
+                                </button>
+                            </h2>
+                            <div id="chapter-3" class="accordion-collapse collapse " aria-labelledby="heading-3"
+                                data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</p>
+                                    <p>Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers. JavaScript is so popular that it's the most used programming language in the world, used as a client-side programming language by 97.0% of all websites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- review List -->
+    <section id="reviews" class="bg-altlight">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2> <i class="bi bi-stars text-stars"></i> Book Reviews <i class="bi bi-stars text-stars"></i></h2>
+                <p class="lead">What my students have said about my book...</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                            </div>
+                            <h5 class="mb-1">A Must for Every aspiring Web Dev</h5>
+                            <p class="mb-1">A very good book for those people who want learn all things about website,
+                                How to make a website ? How a website works ? Wht things u need to make a website work?
+                                User Level for this book is Intermediate to Advanced. But I think beginner also can have a look at the book.</p>
+                            <small>Review By Santhanam</small>
+                        </div>
+
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                            </div>
+                            <h5 class="mb-1">Great Delivery</h5>
+                            <p class="mb-1">I am from remote part of Sikkim in the west district and i thought it may take a very long time for the book to reach my address but i am so glad that it reached my address the exact day they given as expected delivery date. Book was well packed and was new. I highly recommend this book for absolute beginners as well as advance web developers. The instruction is written in simple language that can be understood by everyone. I am highly impressed because the book meets all my expectation and secondly i am also happy with the service provided by them.</p>
+                            <small>Review By Uthaman Pradeep</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                            </div>
+                            <h5 class="mb-1">Fair Price - Quality Content</h5>
+                            <p class="mb-1">This book explanation is awesome. I appreciate this book bcz it gives CSS3,HTML5,Js etc. Only in around $12.99</p>
+                            <small>Review By Nikitha</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-fill text-stars"></i>
+                                <i class="bi bi-star-half text-stars"></i>
+                            </div>
+                            <h5 class="mb-1">Score Saver</h5>
+                            <p class="mb-1">It's for advance learning.
+                                Contains extra key points.
+                                I have secure 95% with help of this book.
+                                I am in deep love with this..</p>
+                            <small>Review By Veera Raghavan </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="pricing" class="bg-light">
+
+        <div class="container-lg pt-1 pb-5">
+            <div class="text-center">
+                <h2>Pricing Plans</h2>
+                <p class="lead text-muted">Choose A Pricing Plan to suit You.</p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center g-3">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0 ">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Starter Edition</h4>
+                            <p class="lead card-subtitle">eBook Download Only</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Permission to Download the ebook.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-9 col-lg-4 ">
+                    <div class="card border-primary border-2 ">
+                        <div class="card-header text-center text-primary">Most Popular</div>
+                        <div class="card-body text-center bg-light py-5">
+                            <h4 class="card-title">Complete Edition</h4>
+                            <p class="lead card-subtitle">eBook Download & Physical Book</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">eBook Download & Physical Book(Printed Book) delivery of this Book at your Address</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Ultimate Edition</h4>
+                            <p class="lead card-subtitle">ebook,Physical Book & Discounts</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">ebook, Physical Book & Discount on our other Books</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form -->
+    <!-- form-control,form-label,form-select,input-group,input-group-text -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get In Touch</h2>
+                <p class="lead">Questions to Ask? Fill out the form to contact me Directly...</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email Address</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. priya@example.com">
+
+                            <!-- Tool Tip -->
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Enter an email address">
+
+
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g. Priya">
+                            <!-- Tool Tip -->
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+
+                        <label for="subject" class="form-label">What is your Question about?</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select class="form-select" id="subject">
+                                <option value="pricing" selected>Pricing Query</option>
+                                <option value="content">Content Query</option>
+                                <option value="other">Other Query</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-floating mt-5 mb-4">
+
+                            <textarea id="query" class="form-control" style="height:140px"></textarea>
+                            <label for="query" class="form-label">Your Query...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button class="btn btn-secondary" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- get updates / model trigger -->
+    <section class="bg-altdark">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in the Loop</h2>
+                <p class="lead">Get the latest updates as they happen...</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">Learning new skills is one of the best ways to become more successful in your career. Whether you are looking for a new career opportunity or would like to move into a more senior role, upgrading your skills can increase your chances of reaching your career goals. Staying up-to-date with industry knowledge and updates allows businesses to identify and exploit new opportunities before competitors can digest the information.</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                        Register for updates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Model itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="Modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Got the Latest updates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Generally, Professionals having a Secure Job avoid to upgrade skills and knowledge and it bacome their counterparts and offer their best at works, experienced professionals need to upgrade their skilld and knowledge. Change is certain and to cope with it at the work front sills and knowledge upgrading become more Important. We Will keep you Updated through Mails</p>
+                    <label for="modal-email" class="form-label">Your Email address:</label>
+                    <input type="email" class="form-control" id="modal-email" placeholder="e.g. priya@example.com">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Have a LOOK! Here are My some other Books which may useful to you. </p>
+            <!-- Drop Downs -->
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown"
+                    data-bs-toggle="dropdown">Choose a book title</button>
+                    <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                        <li><a href="#" class="dropdown-item">Become a React SuperHero</a></li>
+                        <li><a href="#" class="dropdown-item">Roadmap to became Full stack Developer</a></li>
+                        <li><a href="#" class="dropdown-item">You can became a front end Developer</a></li>
+                        <li><a href="#" class="dropdown-item">Learn CSS in a Fun way</a></li>
+                    </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+    <script src="./bootstrap_assests/js/bootstrap.min.js"></script>
+    <script src="./bootstrap_assests/js/jquery.min.js"></script>
+
+
+   
+</body>
+
+</html>
